@@ -52,6 +52,6 @@ int main(int argc, char **argv){
   }
 
   fclose(out);
-
+  MPI_Finalize();
   return 0;
 }
