@@ -6,7 +6,7 @@
 
 module load mpich/3.2.1
 
-cd /hpcfs/home/fisi4028/n.manrique10/Ej27
+cd /hpcfs/home/fisi4028/n.manrique10/NicolasManrique_Ejercicio27
 mpicc sample.c -o sample.x
 
 mpirun -np 4 ./sample.x 20000 -4.5 1.8
