@@ -39,8 +39,10 @@ int main(int argc, char **argv){
       gauss_1 = gauss_1*sigma + mu;
       list[i] = gauss_1;
   }
+   char filename[sizeof "sample_100.txt"];
 
-  if(!(out = fopen("sample_%d.dat", size,"w"))){
+    sprintf(filename, "sample_%03d.txt",rank );
+  if(!(out = fopen(filename,"w"))){
     fprintf(stderr, "Problema abriendo el archivo\n");
     exit(1);
   }
